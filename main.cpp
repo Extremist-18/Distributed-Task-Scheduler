@@ -9,7 +9,7 @@
 int main(){
     int num_threads, num_wokers, mx_token, refill_rate;
     num_threads = 8;
-    num_wokers = 50000;
+    num_wokers = 10000;
     mx_token = 1000;
     refill_rate = 200;
     PriorityScheduler scheduler;
@@ -25,6 +25,8 @@ int main(){
     while(metrics.getProcessed() + metrics.getDropped() < num_wokers){
         this_thread::sleep_for(chrono::milliseconds(5));
     }
+    // std::this_thread::sleep_for(std::chrono::seconds(5));
+
     pool.shutdown();
     metrics.print();
     return 0;

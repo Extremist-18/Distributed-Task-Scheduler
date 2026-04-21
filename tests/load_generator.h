@@ -19,7 +19,7 @@ class LoadGenerator{
                 int userId = i % 7;  
                 Tasks task(i,userId,t,p);
                 th.submit(task);
-                std::this_thread::sleep_for(std::chrono::microseconds(150));
+                std::this_thread::sleep_for(std::chrono::microseconds(250));
             }
         }
 };
