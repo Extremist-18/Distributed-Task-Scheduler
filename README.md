@@ -28,6 +28,12 @@ This system processes up to 50,000+ requests using:
 
 ## Results
 
+## p99 and p95 Latency
+
+![p99 Latency](./assets/latency.png)
+- p99 Latency: ~4.2 ms  
+- p95 Latency: ~3.7 ms  
+
 ### Balanced Load (Low Drop, Priority Visible)
 
 ![Balanced](./assets/Balanced.png)
