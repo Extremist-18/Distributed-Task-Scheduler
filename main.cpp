@@ -9,7 +9,7 @@
 int main(){
     int num_threads, num_wokers, mx_token, refill_rate;
     num_threads = 8;
-    num_wokers = 10000;
+    num_wokers = 50000;
     mx_token = 1000;
     refill_rate = 200;
     PriorityScheduler scheduler;
